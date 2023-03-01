@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap");
+:root {
+  --heightBigSlide: 400px;
+  --widthBigSlide: calc(100% - 40px);
+}
+#Posts {
+  width: 55vw;
+  margin: 50px auto;
+  :where(.css-dev-only-do-not-override-10ed4xt).ant-row {
+    display: block;
+  }
+  .Layout_posts {
+    width: 55vw;
+    margin: 0 auto;
+    display: flex;
+    .Big_Post {
+      width: 100%;
+      height: var(--heightBigSlide);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      .Img_Big_Post {
+        object-fit: cover;
+        height: calc(var(--heightBigSlide) / 2);
+        width: var(--widthBigSlide);
+        margin: 15px auto;
+        object-position: center;
+        background-position: center;
+        display: block;
+        border-radius: 8px;
+      }
+      .ConTent_Post {
+        max-width: var(--widthBigSlide);
+        margin: 0 auto;
+        align-content: flex-start;
+        .View_post {
+          height: calc(var(--heightBigSlide) / 15);
+        }
+        .Post_Title {
+          margin-top: 10px;
+          height: calc(var(--heightBigSlide) / 8);
+          p {
+            max-height: calc(var(--heightBigSlide) / 8);
+            margin: 0;
+            font-size: 20px;
+            font-family: "Open Sans", sans-serif;
+            word-wrap: break-word;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 20px;
+          }
+        }
+        .Post_Author {
+          width: 100%;
+          height: calc(
+            var(--heightBigSlide) / 2 - var(--heightBigSlide) / 15 -
+              var(--heightBigSlide) / 7
+          );
+          .DataUser {
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .avtUser {
+              margin: 0 15px;
+              width: 30px;
+              height: 30px;
+              margin-top: -2px;
+            }
+            .displayNameUser {
+              color: #000;
+              font-family: "Open Sans", sans-serif;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              max-width: 65%;
+            }
+          }
+        }
+      }
+    }
+    .Small_Post {
+      width: 100%;
+      flex-direction: column;
+      .Small_Post_child {
+        width: calc(var(--widthBigSlide) + 20px);
+        height: calc(var(--heightBigSlide) / 3 - 20px);
+        margin: 15px auto;
+        display: flex;
+        img {
+          object-fit: cover;
+          width: calc(var(--widthBigSlide) / 2);
+          height: 100%;
+          object-position: center;
+          background-position: center;
+          display: block;
+          border-radius: 8px;
+        }
+        .ConTent_Small_Post {
+          width: calc(var(--widthBigSlide) / 2);
+          margin-left: 8px;
+          .View_Small_Post {
+            margin-top: 8px;
+          }
+          .Small_Post_Title {
+            p {
+              margin: 0;
+              margin-top: 5px;
+              font-size: 14px;
+              font-family: "Open Sans", sans-serif;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              line-height: 20px;
+            }
+          }
+          .Post_Author_Small {
+            width: 100%;
+            margin: 0;
+            .Smaill_Post_DataUser {
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              .Smaill_Post_avtUser {
+                width: 30px;
+                height: 30px;
+                margin-right: 8px;
+              }
+              .Smaill_Post_displayNameUser {
+                font-size: 12px;
+                font-family: "Open Sans", sans-serif;
+                color: #000;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                max-width: var(--widthBigSlide);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

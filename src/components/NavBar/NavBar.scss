@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap");
+
+:root {
+  --color-secondary: hsl(252, 100%, 90%);
+  --color-success: hsl(120, 95%, 65%);
+  --color-danger: hsl(0, 95%, 65%);
+  --color-black: hsl(252, 30%, 10%);
+}
+
+html {
+  //   font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+  background: #2fcbc3;
+  border: #fff;
+}
+.btn:hover {
+  background-color: #fff;
+  border: 2px solid #2fcbc3;
+}
+
+.warpper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#top .logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#top .nav {
+}
+
+#top .nav a {
+  margin: 0 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  width: max-content;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+#top .nav a:hover {
+  background-color: #2fcbc3;
+  color: #fff;
+  transition: 0.4s;
+}
+#top .logOut .btn-logOut {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+}
+#top .logOut .btn-logOut:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+/* ========================== Create Post ====================== */
+
+.profile-picture {
+  width: 2.7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* ================ CREATE POST ================ */
+
+.create-post {
+  background: #2e2e2e18;
+  border-radius: 20px;
+  display: flex;
+  width: 65%;
+  margin: 30px auto;
+  padding: 0 10px 20px 10px;
+  flex-direction: column;
+}
+
+.create-post .input-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#create-post {
+  width: 85%;
+  height: 35px;
+  border-radius: 8px;
+  padding: 3px 10px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.create-post .input-form .btn-post {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: auto;
+}
+
+/* =========== MODAL POST HIDDEN =============== */
+.showModal{
+    margin-top: 50px;
+}
+.show-form {
+  background-color: #2e2e2e18;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.content-form-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-form-post label {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.content-form-post .input-title,
+.content-form-post .input-body {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+.content-form-post .input-title {
+  padding: 15px 13px;
+}
+
+.content-form-post .input-body {
+  padding: 15px 13px;
+}
+
+.btn-post {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.btn-post:hover{
+    color: #000;
+    font-weight: bold;
+}
