@@ -1,15 +1,16 @@
 import React from 'react';
 import './SlideBanner.scss';
-
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 function SlideBanner(props) {
+
+  //handle slide bannner
   const handlePrev = () => {
     let listItem = document.querySelectorAll('.item')
     document.querySelector('.side').appendChild(listItem[0])
-
   }
   const handleNext = () => {
     let listItem = document.querySelectorAll('.item')
-    document.querySelector('.side').prepend(listItem[listItem.length - 1 ])
+    document.querySelector('.side').prepend(listItem[listItem.length - 1])
   }
 
   return (
@@ -53,12 +54,8 @@ function SlideBanner(props) {
         </div>
       </div>
       <div className='Next_prev'>
-        <div className='prev_icon' onClick={handlePrev}>
-
-        </div>
-        <div className='next_icon' onClick={handleNext}>
-
-        </div>
+        <ArrowLeftOutlined className='prev_icon' onClick={handlePrev} />
+        <ArrowRightOutlined className='next_icon' onClick={handleNext} />
       </div>
     </div>
   );

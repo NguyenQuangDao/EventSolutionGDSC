@@ -1,0 +1,87 @@
+.ModalPost {
+  margin-top: 80px;
+}
+/* ================ CREATE POST ================ */
+.create-post {
+  background: #2e2e2e18;
+  border-radius: 20px;
+  display: flex;
+  width: 60%;
+  margin: 30px auto;
+  padding: 0 10px 20px 10px;
+  flex-direction: column;
+}
+
+.create-post .input-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#create-post {
+  width: 85%;
+  height: 35px;
+  border-radius: 8px;
+  padding: 3px 10px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.create-post .input-form .btn-post {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: auto;
+}
+
+/* =========== MODAL POST HIDDEN =============== */
+.showModal {
+  margin-top: 50px;
+}
+.show-form {
+  background-color: #2e2e2e18;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.content-form-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-form-post label {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.content-form-post .input-title,
+.content-form-post .input-body {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+.content-form-post .input-title {
+  padding: 15px 13px;
+}
+
+.content-form-post .input-body {
+  padding: 15px 13px;
+}
+
+.btn-post {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.btn-post:hover {
+  color: #000;
+  font-weight: bold;
+}

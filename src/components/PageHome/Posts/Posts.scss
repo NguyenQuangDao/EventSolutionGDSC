@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap");
 :root {
-  --heightBigSlide: 400px;
+  --heightBigSlide: 500px;
   --widthBigSlide: calc(100% - 40px);
 }
 #Posts {
-  width: 55vw;
+  width: 60vw;
   margin: 50px auto;
   :where(.css-dev-only-do-not-override-10ed4xt).ant-row {
     display: block;
   }
   .Layout_posts {
-    width: 55vw;
+    width: 65vw;
     margin: 0 auto;
     display: flex;
     .Big_Post {
