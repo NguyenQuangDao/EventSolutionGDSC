@@ -16,7 +16,8 @@ function SlideBanner(props) {
   return (
     <div className='Container'>
       <div className='side'>
-        <div className='item' style={{ backgroundColor: 'blue' }}>
+        <div className='item' style={{backgroundImage:'url("https://res.cloudinary.com/dwcdztgxn/image/upload/v1565972873/lion-safari-afika-landscape-40756_y7oxsg.jpg")'}}>
+          <img src=''/>
           <div className='Title'>
             <div className='Name'>ha long</div>
             <div className='Content'>dep tuyet voi</div>
