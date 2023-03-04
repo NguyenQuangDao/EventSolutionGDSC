@@ -1,7 +1,31 @@
 import React from "react";
 import './Login.scss';
-import { GoogleOutlined, FacebookOutlined, GithubOutlined } from '@ant-design/icons'
+import { GoogleOutlined, FacebookOutlined, GithubOutlined } from '@ant-design/icons';
+import { auth, db } from "../Firebase/Config";
+import { signInWithPopup, FacebookAuthProvider } from 'firebase/auth';
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 function Login() {
+
+    const signInWithFaceBook = async () => {
+        const fbProvider = new FacebookAuthProvider()
+        const { operationType, providerId, user } = await signInWithPopup(auth, fbProvider)
+        if (operationType === 'signIn') {
+            try {
+                addDoc(collection(db, "users"), {
+                    providerId: providerId,
+                    displayName: user.displayName,
+                    email: user.email,
+                    photoURL: user.photoURL,
+                    uid: user.uid,
+                    timestamp: serverTimestamp(),
+                    // keyWord: generateKeywords(user.displayName.toLowerCase())
+                });
+            } catch (e) {
+                console.error("Error adding document: ", e);
+            }
+        }
+    }
+
     return (
         <div className="Login">
             <div class="form_container">
@@ -33,7 +57,7 @@ function Login() {
                     <button title="Sign in with Google" class="sign-in_ggl">
                         <span><GoogleOutlined /></span>
                     </button>
-                    <button title="Sign in with Facebook" class="sign-in_fbl">
+                    <button title="Sign in with Facebook" class="sign-in_fbl" onClick={signInWithFaceBook}>
                         <span><FacebookOutlined /></span>
                     </button>
                     <button title="Sign in with Github" class="sign-in_ghl">
