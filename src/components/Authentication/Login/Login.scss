@@ -1,6 +1,7 @@
 .Login {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  height: 100vh;
   .form_container {
     width: fit-content;
     height: fit-content;
@@ -167,10 +168,14 @@
     }
   }
 
-
   .note {
     font-size: 0.75rem;
     color: #8b8e98;
-    text-decoration: underline;
+    text-decoration: none;
+  }
+  .note .note_register {
+    font-size: 0.8rem;
+    color: blueviolet;
+    cursor: pointer;
   }
 }

@@ -23,7 +23,7 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 10px 25px;
+  padding: 10px 20px;
   font-weight: 500;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -31,14 +31,14 @@ img {
   background: #2fcbc3;
   border: #fff;
 }
-.btn:hover {
-  background-color: #fff;
-  border: 2px solid #2fcbc3;
-}
+// .btn:hover {
+//   background-color: #fff;
+//   border: 2px solid #2fcbc3;
+// }
 
 .warpper {
   width: 85%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 #top {
@@ -47,9 +47,10 @@ img {
   justify-content: space-between;
 }
 
-#top .logo {
+#top .logo h3{
   font-size: 1.5rem;
   cursor: pointer;
+  font-weight: 700;
 }
 
 #top .nav {
@@ -77,6 +78,8 @@ img {
 }
 #top .logOut .btn-logOut:hover {
   color: #000;
+  background-color: #fff;
+  border: 2px solid #2fcbc3;
   // font-weight: bold;
 }
 

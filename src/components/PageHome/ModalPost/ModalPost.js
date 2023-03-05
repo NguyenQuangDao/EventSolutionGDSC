@@ -14,10 +14,10 @@ function ModalPost() {
         setIsModalOpenThinking(false);
     };
     return (
-        <div div className="ModalPost">
+        <div div className="ModalPost" >
             <form action="" className="create-post">
                 <div className="title-post" style={{ marginLeft: '15px' }}>
-                    <h2>What are you thinking</h2>
+                    <h2 style={{userSelect:'none'}}>What are you thinking</h2>
                 </div>
                 <div className="input-form">
                     <input type="text" placeholder="What's on your mind, Diana?" id="create-post" onClick={showModal} />

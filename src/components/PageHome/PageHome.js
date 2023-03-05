@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from './NavBar/NavBar';
+import NavBar from "../Share/NavBar/NavBar";
 import SlideBanner from './SlideBanner/SlideBanner'
 import ModalPost from './ModalPost/ModalPost'
 import PostHeader from './PostHeader/PostHeader';

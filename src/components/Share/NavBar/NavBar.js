@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import './NavBar.scss'
+import { auth } from "../../Firebase/Config";
 import { Modal } from "antd";
+import { Link, useNavigate } from "react-router-dom";
 function NavBar() {
+    const navigateSignout = useNavigate()
     const [isModalOpenSignOuts, setIsModalOpenSignOut] = useState(false);
     // isModalOpenSignOut
     const isModalOpenSignOut = () => {
         setIsModalOpenSignOut(true)
     }
     const handleOkSignOut = () => {
-        setIsModalOpenSignOut(false)
+        auth.signOut()
+        navigateSignout("/login")
     }
     const handleCancelSignOut = () => {
         setIsModalOpenSignOut(false)
     }
-  
+
     return (
         <div className="warpper">
             <div id="top">
@@ -21,21 +25,21 @@ function NavBar() {
                     <h3>Gateway</h3>
                 </div>
                 <div className="nav">
-                    <a href="">Home</a>
-                    <a href="">Posts</a>
-                    <a href="">Camera</a>
-                    <a href="">Contact</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/posts">Posts</Link>
+                    <Link to='/camera'>Camera</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
                 <div className="logOut" onClick={isModalOpenSignOut}>
                     <p className="btn btn-logOut">Sign out</p>
                 </div>
-                <Modal title="Basic Modal" open={isModalOpenSignOuts} onCancel={handleCancelSignOut} onOk={handleOkSignOut} closable={false} >
-                    <p>Bạn có chắc muốn đăng xuất?</p>
+                <Modal title="Sign out" open={isModalOpenSignOuts} onCancel={handleCancelSignOut} onOk={handleOkSignOut} closable={false} >
+                    <p>Are you sure you want to sign out?</p>
                 </Modal>
             </div>
-          
 
-           
+
+
 
 
 
