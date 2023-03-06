@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState, useRef } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { signInWithPopup, FacebookAuthProvider, GoogleAuthProvider, GithubAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { auth, db } from "../components/Firebase/Config";
@@ -15,6 +15,7 @@ export const ContextProivider = ({ children }) => {
     useEffect(() => {
         setLoading(true)
         const unsubcribe = onAuthStateChanged(auth, res => {
+            console.log(res);
             if (res) {
                 setLoading(false)
                 const { displayName, email, password, photoURL, uid } = user;
@@ -67,8 +68,8 @@ export const ContextProivider = ({ children }) => {
         await signInWithPopup(auth, ggProvider)
             .then((result) => {
                 // This gives you a Google Access Token. You can use it to access the Google API.
-                const credential = GoogleAuthProvider.credentialFromResult(result);
-                const token = credential.accessToken;
+                // const credential = GoogleAuthProvider.credentialFromResult(result);
+                // const token = credential.accessToken;
                 // The signed-in user info.
                 const user = result.user;
                 // IdP data available using getAdditionalUserInfo(result)

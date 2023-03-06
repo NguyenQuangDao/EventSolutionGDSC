@@ -1,12 +1,13 @@
 import React, { useRef, useState } from "react";
 import './Login.scss';
 import { GoogleOutlined, FacebookOutlined, GithubOutlined } from '@ant-design/icons';
-import { auth, db } from "../../Firebase/Config";
+// import { auth, db } from "../../Firebase/Config";
 import { useUserContext } from "../../../Context/userContext";
-
+import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons'
 
 import { Link } from "react-router-dom";
 function Login() {
+    const [hideShowPassword, setHideShowPassword] = useState(false)
     const {
         signInWithPassword,
         signInWithGoogle,
@@ -14,10 +15,23 @@ function Login() {
         signInWithGithub } = useUserContext()
     const emaiSignIn = useRef()
     const passwordSignIn = useRef()
+    //signIn
     const signIn = () => {
         const email = emaiSignIn.current.value.toString();
         const password = passwordSignIn.current.value.toString();
         if (email && password) signInWithPassword(email, password);
+    }
+    //togglePassword
+    const togglePassword = () => {
+        const passwordInput = document.getElementById("password_field");
+        console.log(passwordInput.type);
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            setHideShowPassword(true)
+        } else {
+            passwordInput.type = "password";
+            setHideShowPassword(false)
+        }
     }
     return (
         <div className="Login">
@@ -36,6 +50,7 @@ function Login() {
                 <div className="input_container">
                     <label className="input_label" htmlFor="password_field">Password</label>
                     <input placeholder="Password" title="Inpit title" name="input-name" type="password" className="input_field" id="password_field" ref={passwordSignIn} />
+                    <div onClick={togglePassword}>{hideShowPassword ? <i className="EyeOutlined"><EyeOutlined /></i> : <i className="EyeOutlined"><EyeInvisibleOutlined /></i>}</div>
                 </div>
                 <button className="sign-in_btn" onClick={signIn}>
                     <span>Sign In</span>
