@@ -45,11 +45,11 @@ function Login() {
                 </div>
                 <div className="input_container">
                     <label className="input_label" htmlFor="email_field">Email</label>
-                    <input placeholder="name@mail.com" title="Inpit title" name="input-name" type="text" className="input_field" id="email_field" ref={emaiSignIn} />
+                    <input placeholder="name@mail.com" title="Email" name="input-name" type="text" className="input_field" id="email_field" ref={emaiSignIn} />
                 </div>
                 <div className="input_container">
                     <label className="input_label" htmlFor="password_field">Password</label>
-                    <input placeholder="Password" title="Inpit title" name="input-name" type="password" className="input_field" id="password_field" ref={passwordSignIn} />
+                    <input placeholder="Password" title="Password" name="input-name" type="password" className="input_field" id="password_field" ref={passwordSignIn} />
                     <div onClick={togglePassword}>{hideShowPassword ? <i className="EyeOutlined"><EyeOutlined /></i> : <i className="EyeOutlined"><EyeInvisibleOutlined /></i>}</div>
                 </div>
                 <button className="sign-in_btn" onClick={signIn}>

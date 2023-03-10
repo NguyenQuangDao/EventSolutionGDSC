@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './NavBar.scss'
-import { auth } from "../../Firebase/Config";
+import { auth } from "../../../Firebase/Config";
 import { Modal } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 function NavBar() {

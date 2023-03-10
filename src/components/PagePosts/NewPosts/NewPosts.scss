@@ -1,0 +1,90 @@
+#NewPosts {
+  .NewPosts {
+    max-width: 550px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    #header_NewPosts {
+      display: flex;
+      justify-content: space-between;
+      .header_NewPosts {
+        margin: 15px 15px 0 15px;
+        .NameUserNewPosts_TimeNewPosts {
+          margin-left: 10px;
+          font-family: "Open Sans", sans-serif;
+          .NameUserNewPosts {
+            margin: 0;
+            font-weight: 800;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: calc(550px * 2 / 3.5);
+          }
+          .TimeNewPosts {
+            margin: 0;
+            font-weight: 600;
+          }
+        }
+      }
+      .View_NewPosts {
+        margin: 15px 20px 15px 15px;
+        .EyeOutlined_NewPosts {
+          color: #000;
+        }
+      }
+    }
+    .articleTitle_NewPosts {
+      max-width: calc(550px - 30px);
+      margin: 0 20px;
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        word-wrap: break-word;
+      }
+    }
+    .Img_NewPosts {
+      max-height: 550px;
+      background-size: contain;
+    }
+    .Seen_Like_NewPosts {
+      margin: 15px;
+      display: flex;
+      justify-content: space-between;
+      .Like_NewPosts {
+        display: flex;
+        cursor: pointer;
+        .img_Like_NewPosts {
+          display: inline;
+          width: 23px;
+          height: 23px;
+        }
+        p {
+          margin: 0 5px;
+          color: #6b6b6b;
+        }
+    }
+    .Count_comment {
+          cursor: pointer;
+        color: #6b6b6b;
+      }
+    }
+    .form_input {
+      margin: 15px;
+      form {
+        display: flex;
+        justify-content: center;
+      }
+      .input_NewPosts {
+        border-radius: 25px;
+        border: 1px solid #6b6b6b;
+        padding-left: 15px;
+        background-color: #ffffff;
+        font-size: 14px;
+        width: 450px;
+        height: 35px;
+      }
+    }
+  }
+}

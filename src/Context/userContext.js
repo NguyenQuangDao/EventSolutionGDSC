@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { signInWithPopup, FacebookAuthProvider, GoogleAuthProvider, GithubAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { auth, db } from "../components/Firebase/Config";
+import { auth, db } from "../Firebase/Config";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 const UserContext = createContext({})

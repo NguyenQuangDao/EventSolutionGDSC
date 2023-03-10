@@ -20,7 +20,7 @@ function ModalPost() {
                     <h2 style={{userSelect:'none'}}>What are you thinking</h2>
                 </div>
                 <div className="input-form">
-                    <input type="text" placeholder="What's on your mind, Diana?" id="create-post" onClick={showModal} />
+                    <input type="text" placeholder="What's on your mind?" id="create-post" onClick={showModal} />
                     {/* <input type="submit" value="Submit" className="btn btn-post" /> */}
                 </div>
             </form>
