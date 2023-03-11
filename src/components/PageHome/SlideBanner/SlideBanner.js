@@ -16,41 +16,48 @@ function SlideBanner(props) {
   return (
     <div className='Container'>
       <div className='side'>
-        <div className='item' style={{backgroundImage:'url("https://res.cloudinary.com/dwcdztgxn/image/upload/v1565972873/lion-safari-afika-landscape-40756_y7oxsg.jpg")'}}>
-          <img src=''/>
+        <div className='item'>
+          <img src='https://res.cloudinary.com/dwcdztgxn/image/upload/v1565972873/lion-safari-afika-landscape-40756_y7oxsg.jpg' />
           <div className='Title'>
-            <div className='Name'>ha long</div>
-            <div className='Content'>dep tuyet voi</div>
+            {/* <div className='Name'>ha long</div>
+            <div className='Content'>dep tuyet voi</div> */}
           </div>
         </div>
-        <div className='item' style={{ backgroundColor: '#B31942' }}>
+        <div className='item'>
+          <img src='https://tse1.mm.bing.net/th?id=OIP.5nYctGK1YJfzNRcAmLWXCgHaEo&pid=Api&rs=1&c=1&qlt=95&w=188&h=117' />
           <div className='Title'>
-            <div className='Name'>ha long</div>
-            <div className='Content'>dep tuyet voi</div>
+            {/* <div className='Name'>ha long</div>
+            <div className='Content'>dep tuyet voi</div> */}
           </div>
-        </div>
-        <div className='item' style={{ backgroundColor: '#623836' }}>
+        </div><div className='item'>
+          <img src='https://anhdepfree.com/wp-content/uploads/2020/11/anh-dep-cho-desktop.jpg' />
           <div className='Title'>
-            <div className='Name'>ha long</div>
-            <div className='Content'>dep tuyet voi</div>
+            {/* <div className='Name'>ha long</div>
+            <div className='Content'>dep tuyet voi</div> */}
           </div>
-        </div>
-        <div className='item' style={{ backgroundColor: '#BBDF32' }}>
+        </div><div className='item'>
+          <img src='https://res.cloudinary.com/dwcdztgxn/image/upload/v1565972873/lion-safari-afika-landscape-40756_y7oxsg.jpg' />
           <div className='Title'>
-            <div className='Name'>ha long</div>
-            <div className='Content'>dep tuyet voi</div>
+            {/* <div className='Name'>ha long</div>
+            <div className='Content'>dep tuyet voi</div> */}
           </div>
-        </div>
-        <div className='item' style={{ backgroundColor: '#48335E' }}>
+        </div><div className='item'>
+          <img src='https://tse1.mm.bing.net/th?id=OIP.14SvL_2rzywyJhMYgIJQBgHaEK&pid=Api&rs=1&c=1&qlt=95&w=209&h=117' />
           <div className='Title'>
-            <div className='Name'>ha long</div>
-            <div className='Content'>dep tuyet voi</div>
+            {/* <div className='Name'>ha long</div>
+            <div className='Content'>dep tuyet voi</div> */}
           </div>
-        </div>
-        <div className='item' style={{ backgroundColor: '#8B4202' }}>
+        </div><div className='item'>
+          <img src='https://res.cloudinary.com/dwcdztgxn/image/upload/v1565972873/lion-safari-afika-landscape-40756_y7oxsg.jpg' />
           <div className='Title'>
-            <div className='Name'>ha long</div>
-            <div className='Content'>dep tuyet voi</div>
+            {/* <div className='Name'>ha long</div>
+            <div className='Content'>dep tuyet voi</div> */}
+          </div>
+        </div><div className='item'>
+          <img src='https://res.cloudinary.com/dwcdztgxn/image/upload/v1565972873/lion-safari-afika-landscape-40756_y7oxsg.jpg' />
+          <div className='Title'>
+            {/* <div className='Name'>ha long</div>
+            <div className='Content'>dep tuyet voi</div> */}
           </div>
         </div>
       </div>

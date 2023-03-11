@@ -35,7 +35,7 @@ function ModalPost() {
                         <input type="text" className="input-title" placeholder="Enter input title ..." required />
                         <label htmlFor="">Content post</label>
                         <textarea className="input-body" cols="10" rows="10" placeholder="Enter input body" required />
-                        <input type="button" className="btn btn-post" value="Submit" />
+                       
                     </div>
                 </Modal>
             </div >
